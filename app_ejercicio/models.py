@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Redirect (models.model):
+    key = models.CharField(max_length=25)
+    url = models.URLField()
+    active = models.BooleanField(default=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
