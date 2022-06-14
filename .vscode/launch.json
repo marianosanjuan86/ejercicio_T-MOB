@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "env": {
+                "NAME_DB" : "heroku_54afc461694fdd0", 
+                "HOST_DB" : "us-cdbr-east-05.cleardb.net",
+                "USER_DB" : "b8f8beac1c6222",
+                "PASSWORD_DB" : "d1598bbc",
+            },    
+            "django": true,
+            "justMyCode": true
+        }
+    ]
+}
