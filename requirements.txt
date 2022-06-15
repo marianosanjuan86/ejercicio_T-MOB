@@ -19,5 +19,6 @@ python-binary-memcached==0.31.1
 six==1.16.0
 sqlparse==0.4.2
 tomli==2.0.1
+tzdata==2022.1
 uhashring==2.1
 whitenoise==6.2.0
