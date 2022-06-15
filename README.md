@@ -20,10 +20,15 @@ Memcached proporcionada desde heroku
 #### Modelos:
 
 Redirect:
-	key: CharField	
+
+	key: CharField
+
 	url: URLField
+
 	active: BooleanField
+
 	updated_at: DateTimeField
+    
 	created_at: DateTimeField
 
 Este modelo cuenta con un signal, el cual se ejecuta cuando se persisten datos del modelo Redirect. La finalidad de este signal es, tomar los campos key y url y almacenarlos en Memcached en formato JSON
@@ -40,7 +45,9 @@ Recibe por Get HTTP el parametro Key, busca en cache y devuelve un JSON con la k
 ### Heroku app:
 
 URL: https://db-tmob.herokuapp.com/
+
 URL TEST: https://db-tmob.herokuapp.com/?key=tmob 
+
 URL ADMIN: https://db-tmob.herokuapp.com/admin 
 
 Usuario: tmob  

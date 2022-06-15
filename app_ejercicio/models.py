@@ -11,6 +11,7 @@ class Redirect (models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
+
 @receiver(post_save, sender=Redirect, )
 def guardar_en_cache (sender, instance, **kwargs):
     if instance.active:
