@@ -1,0 +1,1 @@
+web: gunicorn ejercicio_TMOB.wsgi --log-file -
