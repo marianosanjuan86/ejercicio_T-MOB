@@ -17,6 +17,9 @@
                 "HOST_DB" : "us-cdbr-east-05.cleardb.net",
                 "USER_DB" : "b8a0d46ebd6d58",
                 "PASSWORD_DB" : "9a75b65c",
+                "MEMCACHIER_SERVERS" : "mc4.dev.ec2.memcachier.com:11211",
+                "MEMCACHIER_USERNAME" : "EA6B4F",
+                "MEMCACHIER_PASSWORD" : "98BF86AEA566CF3899E4C28BA76FEBDE"
             },
              
             "django": true,

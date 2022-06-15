@@ -77,11 +77,10 @@ WSGI_APPLICATION = 'ejercicio_TMOB.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': "heroku_ce8d2aa6b3a1bc9",
-        'HOST': "us-cdbr-east-05.cleardb.net",
-        'USER': "b8a0d46ebd6d58",
-        'PASSWORD': "9a75b65c",
+        'NAME': os.environ.get("NAME_DB"),
+        'HOST': os.environ.get("HOST_DB"),
+        'USER': os.environ.get("USER_DB"),
+        'PASSWORD': os.environ.get("PASSWORD_DB"),
         'PORT': '',
     }
 }
@@ -134,3 +133,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_bmemcached.memcached.BMemcached',
+        'LOCATION': os.environ.get("MEMCACHIER_SERVERS"),
+        'OPTIONS': {
+                    'username': os.environ.get("MEMCACHIER_USERNAME"),
+                    'password': os.environ.get("MEMCACHIER_PASSWORD"),
+            }
+    }
+}
