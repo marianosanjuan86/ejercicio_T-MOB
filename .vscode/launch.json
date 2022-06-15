@@ -13,11 +13,12 @@
                 "runserver"
             ],
             "env": {
-                "NAME_DB" : "heroku_54afc461694fdd0", 
+                "NAME_DB" : "heroku_ce8d2aa6b3a1bc9", 
                 "HOST_DB" : "us-cdbr-east-05.cleardb.net",
-                "USER_DB" : "b8f8beac1c6222",
-                "PASSWORD_DB" : "d1598bbc",
-            },    
+                "USER_DB" : "b8a0d46ebd6d58",
+                "PASSWORD_DB" : "9a75b65c",
+            },
+             
             "django": true,
             "justMyCode": true
         }

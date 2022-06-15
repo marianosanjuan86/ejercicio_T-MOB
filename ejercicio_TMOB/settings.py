@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "app_ejercicio",
 ]
 
 MIDDLEWARE = [
@@ -77,13 +78,20 @@ WSGI_APPLICATION = 'ejercicio_TMOB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get("NAME_DB"),
-        'HOST': os.environ.get("HOST_DB"),
-        'USER': os.environ.get("USER_DB"),
-        'PASSWORD': os.environ.get("PASSWORD_DB"),
+        'NAME': "heroku_ce8d2aa6b3a1bc9",
+        'HOST': "us-cdbr-east-05.cleardb.net",
+        'USER': "b8a0d46ebd6d58",
+        'PASSWORD': "9a75b65c",
         'PORT': '',
     }
 }
+
+#        'NAME': os.environ.get("NAME_DB"),
+ #       'HOST': os.environ.get("HOST_DB"),
+ #       'USER': os.environ.get("USER_DB"),
+ #       'PASSWORD': os.environ.get("PASSWORD_DB"),
+ #       'PORT': '',
+
 
 
 # Password validation

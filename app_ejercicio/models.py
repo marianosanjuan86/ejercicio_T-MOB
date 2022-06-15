@@ -1,6 +1,6 @@
 from django.db import models
 
-class Redirect (models.model):
+class Redirect (models.Model):
     key = models.CharField(max_length=25)
     url = models.URLField()
     active = models.BooleanField(default=True)
