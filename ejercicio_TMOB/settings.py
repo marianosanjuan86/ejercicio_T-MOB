@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'ejercicio_TMOB.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get("NAME_DB"),
         'HOST': os.environ.get("HOST_DB"),
         'USER': os.environ.get("USER_DB"),
@@ -84,13 +85,6 @@ DATABASES = {
         'PORT': '',
     }
 }
-
-#        'NAME': os.environ.get("NAME_DB"),
- #       'HOST': os.environ.get("HOST_DB"),
- #       'USER': os.environ.get("USER_DB"),
- #       'PASSWORD': os.environ.get("PASSWORD_DB"),
- #       'PORT': '',
-
 
 
 # Password validation
